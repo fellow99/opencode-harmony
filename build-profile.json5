@@ -1,24 +1,42 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Administrator\\.ohos\\config\\default_opencode-harmony_mpNpLId9EhyKMlAZNMmrkZH1is0GB7V6AaU0KTNFZ_E=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A93E5FE0759AA085C4AE59C3644C530E4371D7B7D98BE681DAEB0FFF70A21E56AF858F30CA9FC",
+          "profile": "C:\\Users\\Administrator\\.ohos\\config\\default_opencode-harmony_mpNpLId9EhyKMlAZNMmrkZH1is0GB7V6AaU0KTNFZ_E=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\default_opencode-harmony_mpNpLId9EhyKMlAZNMmrkZH1is0GB7V6AaU0KTNFZ_E=.p12",
+          "storePassword": "0000001A173F7C38AB75A51425E8021BD0E2FF44262FCDFE57036086F17E71B73AA3B4F524ECEA25213C"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
         "signingConfig": "default",
-        "targetSdkVersion": "6.1.1(24)",
-        "compatibleSdkVersion": "6.1.1(24)",
+        "compatibleSdkVersion": "5.0.5(17)",
+        "compatibleSdkVersionStage": "release",
         "runtimeOS": "HarmonyOS",
         "buildOption": {
+          "nativeLib": {
+            "collectAllLibs": true
+          },
           "strictMode": {
             "caseSensitiveCheck": true,
             "useNormalizedOHMUrl": true
           }
-        }
+        },
+        "targetSdkVersion": "6.1.1(24)"
       }
     ],
     "buildModeSet": [
       {
-        "name": "debug",
+        "name": "debug"
       },
       {
         "name": "release"
@@ -27,8 +45,8 @@
   },
   "modules": [
     {
-      "name": "entry",
-      "srcPath": "./entry",
+      "name": "electron",
+      "srcPath": "./electron",
       "targets": [
         {
           "name": "default",
@@ -37,6 +55,10 @@
           ]
         }
       ]
+    },
+    {
+      "name": "web_engine",
+      "srcPath": "./web_engine"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "modelVersion": "6.1.1",
-  "description": "Please describe the basic information.",
+  "description": "OpenCode Harmony 桌面版（Electron-on-HarmonyOS 运行时）",
   "dependencies": {
   },
   "devDependencies": {

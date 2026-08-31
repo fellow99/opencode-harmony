@@ -1,0 +1,6 @@
+{
+  "name": "opencode-harmony",
+  "version": "0.1.0",
+  "description": "OpenCode Harmony — OpenCode Desktop 的鸿蒙桌面版（Electron-on-HarmonyOS）",
+  "main": "main.js"
+}
